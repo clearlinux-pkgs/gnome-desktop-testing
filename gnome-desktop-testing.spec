@@ -4,7 +4,7 @@
 #
 Name     : gnome-desktop-testing
 Version  : 2018.1
-Release  : 1
+Release  : 2
 URL      : https://gitlab.gnome.org/GNOME/gnome-desktop-testing/-/archive/v2018.1/gnome-desktop-testing-v2018.1.tar.gz
 Source0  : https://gitlab.gnome.org/GNOME/gnome-desktop-testing/-/archive/v2018.1/gnome-desktop-testing-v2018.1.tar.gz
 Summary  : No detailed summary available
