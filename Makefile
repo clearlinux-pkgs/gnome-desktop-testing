@@ -1,5 +1,5 @@
 PKG_NAME := gnome-desktop-testing
-URL = https://gitlab.gnome.org/GNOME/gnome-desktop-testing/-/archive/v2018.1/gnome-desktop-testing-v2018.1.tar.gz
+URL = https://download.gnome.org/sources/gnome-desktop-testing/2021/gnome-desktop-testing-2021.1.tar.xz
 ARCHIVES = 
 
 include ../common/Makefile.common
