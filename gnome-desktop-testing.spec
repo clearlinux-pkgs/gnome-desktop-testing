@@ -4,7 +4,7 @@
 #
 Name     : gnome-desktop-testing
 Version  : 2021.1
-Release  : 3
+Release  : 4
 URL      : https://download.gnome.org/sources/gnome-desktop-testing/2021/gnome-desktop-testing-2021.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-desktop-testing/2021/gnome-desktop-testing-2021.1.tar.xz
 Summary  : No detailed summary available
