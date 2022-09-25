@@ -4,7 +4,7 @@
 #
 Name     : gnome-desktop-testing
 Version  : 2021.1
-Release  : 5
+Release  : 6
 URL      : https://download.gnome.org/sources/gnome-desktop-testing/2021/gnome-desktop-testing-2021.1.tar.xz
 Source0  : https://download.gnome.org/sources/gnome-desktop-testing/2021/gnome-desktop-testing-2021.1.tar.xz
 Summary  : No detailed summary available
@@ -54,15 +54,15 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1625031253
+export SOURCE_DATE_EPOCH=1664148248
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=4 "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
 %configure --disable-static
 make  %{?_smp_mflags}
 
@@ -74,10 +74,10 @@ export no_proxy=localhost,127.0.0.1,0.0.0.0
 make %{?_smp_mflags} check
 
 %install
-export SOURCE_DATE_EPOCH=1625031253
+export SOURCE_DATE_EPOCH=1664148248
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/gnome-desktop-testing
-cp %{_builddir}/gnome-desktop-testing-2021.1/COPYING %{buildroot}/usr/share/package-licenses/gnome-desktop-testing/bf50bac24e7ec325dbb09c6b6c4dcc88a7d79e8f
+cp %{_builddir}/gnome-desktop-testing-%{version}/COPYING %{buildroot}/usr/share/package-licenses/gnome-desktop-testing/bf50bac24e7ec325dbb09c6b6c4dcc88a7d79e8f || :
 %make_install
 
 %files
